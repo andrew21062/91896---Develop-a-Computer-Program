@@ -1,0 +1,37 @@
+# Andrew Wong
+# 2/6/24
+# Version 1
+
+# importing tkinter
+from tkinter import Tk, Button, Entry, Label, messagebox
+import random
+
+# the main window settings
+root = Tk()
+root.geometry('600x450')
+root.resizable(width=False, height=False)
+root.title('v1')
+
+# quit function
+def quit():
+    root.destroy()
+
+# the quit button
+quit_button = Button(root, text="Quit", command=quit, fg="white", bg="red").grid(column=5, row=0, padx=15, pady=10, sticky=E)
+
+  
+# the customer name
+name_label = Label(root, text="Customer name")
+name_entry_box = Entry(root, width=13)
+
+# the recipe number
+recipe_number = random.randint(100000, 999999)
+recipe_label = Label(root, text="recipe_number").grid(column=0, row=1)
+recipe_number_label = Label(root, text=recipe_number).grid(column=1, row=1)
+space_1 = Label(root, text="").grid(column=0, row=2)
+
+# grid for customer name
+name_label.grid(column=0, row=0, padx=3, pady=5)
+name_entry_box.grid(column=1, row=0, padx=3, pady=5)
+
+root.mainloop()
