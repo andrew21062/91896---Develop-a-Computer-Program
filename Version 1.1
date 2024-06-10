@@ -1,0 +1,347 @@
+# Andrew Wong
+# 22/5/24
+# V1
+
+# importing tkinter
+from tkinter import Tk, Button, Entry, Label, messagebox
+import random
+
+# the main window settings
+root = Tk()
+root.geometry('600x450')
+root.resizable(width=False, height=False)
+root.title('v1')
+
+# detail list
+
+title_list = ["Name   " + "Recipe number   " + "Item hired   " + "Number hired   " + "Days hired   "]
+detail_list = []
+error_list = []
+
+# quit function
+def quit():
+    root.destroy()
+
+# the error pop up window
+def error_message():
+    print(error_list)
+    messagebox.showwarning('Wrong Input', 'There is error in your input')
+    root.mainloop()
+
+# Check for valid inputs
+def add_to_list():
+    name_entry = name_entry_box.get()
+    item_1_entry = item_1_entry_box.get()
+    item_2_entry = item_2_entry_box.get()
+    item_3_entry = item_3_entry_box.get()
+    item_4_entry = item_4_entry_box.get()
+    item_5_entry = item_5_entry_box.get()
+    item_6_entry = item_6_entry_box.get()
+    item_7_entry = item_7_entry_box.get()
+    item_8_entry = item_8_entry_box.get()
+    item_9_entry = item_9_entry_box.get()
+    item_10_entry = item_10_entry_box.get()
+    item_11_entry = item_11_entry_box.get()
+    item_12_entry = item_12_entry_box.get()
+    item_13_entry = item_13_entry_box.get()
+    item_14_entry = item_14_entry_box.get()
+    date_entry = date_entry_box.get()
+    
+    if name_entry.isalpha():
+        detail_list.append(name_entry)
+    else:
+        error_list.clear()
+        error_list.append("Name is alphabet only.")
+        error_message()
+# Check item 1
+    while True:
+        if item_1_entry.isdigit():
+                if int(item_1_entry) <= 0:
+                    detail_list.append(item_1_entry)
+                    break
+                else:
+                    break
+        else:
+            error_list.clear()
+            error_list.append("Item amount is numbers only.")
+            error_message()
+# Check item 2
+    while True:
+        if item_2_entry.isdigit():
+                if int(item_2_entry) <= 0:
+                    detail_list.append(item_2_entry)
+                    break
+                else:
+                    break
+        else:
+            error_list.clear()
+            error_list.append("Item amount is numbers only.")
+            error_message()
+# Check item 3
+    while True:
+        if item_3_entry.isdigit():
+                if int(item_3_entry) <= 0:
+                    detail_list.append(item_3_entry)
+                    break
+                else:
+                    break
+        else:
+            error_list.clear()
+            error_list.append("Item amount is numbers only.")
+            error_message()
+# Check item 4
+    while True:
+        if item_4_entry.isdigit():
+                if int(item_4_entry) <= 0:
+                    detail_list.append(item_4_entry)
+                    break
+                else:
+                    break
+        else:
+            error_list.clear()
+            error_list.append("Item amount is numbers only.")
+            error_message()
+# Check item 5
+    while True:
+        if item_5_entry.isdigit():
+                if int(item_5_entry) <= 0:
+                    detail_list.append(item_5_entry)
+                    break
+                else:
+                    break
+        else:
+            error_list.clear()
+            error_list.append("Item amount is numbers only.")
+            error_message()
+# Check item 6    
+    while True:
+        if item_6_entry.isdigit():
+                if int(item_6_entry) <= 0:
+                    detail_list.append(item_6_entry)
+                    break
+                else:
+                    break
+        else:
+            error_list.clear()
+            error_list.append("Item amount is numbers only.")
+            error_message()
+# Check item 7
+    while True:
+        if item_7_entry.isdigit():
+                if int(item_7_entry) <= 0:
+                    detail_list.append(item_7_entry)
+                    break
+                else:
+                    break
+        else:
+            error_list.clear()
+            error_list.append("Item amount is numbers only.")
+            error_message()
+# Check item 8
+    while True:
+        if item_8_entry.isdigit():
+                if int(item_8_entry) <= 0:
+                    detail_list.append(item_8_entry)
+                    break
+                else:
+                    break
+        else:
+            error_list.clear()
+            error_list.append("Item amount is numbers only.")
+            error_message()
+# Check item 9
+    while True:
+        if item_9_entry.isdigit():
+                if int(item_9_entry) <= 0:
+                    detail_list.append(item_9_entry)
+                    break
+                else:
+                    break
+        else:
+            error_list.clear()
+            error_list.append("Item amount is numbers only.")
+            error_message()
+# Check item 10
+    while True:
+        if item_10_entry.isdigit():
+                if int(item_10_entry) <= 0:
+                    detail_list.append(item_10_entry)
+                    break
+                else:
+                    break
+        else:
+            error_list.clear()
+            error_list.append("Item amount is numbers only.")
+            error_message()
+# Check item 11
+    while True:
+        if item_11_entry.isdigit():
+                if int(item_11_entry) <= 0:
+                    detail_list.append(item_11_entry)
+                    break
+                else:
+                    break
+        else:
+            error_list.clear()
+            error_list.append("Item amount is numbers only.")
+            error_message()
+# Check item 12
+    while True:
+        if item_12_entry.isdigit():
+                if int(item_12_entry) <= 0:
+                    detail_list.append(item_12_entry)
+                    break
+                else:
+                    break
+        else:
+            error_list.clear()
+            error_list.append("Item amount is numbers only.")
+            error_message()
+# Check item 13
+    while True:
+        if item_13_entry.isdigit():
+                if int(item_13_entry) <= 0:
+                    detail_list.append(item_13_entry)
+                    break
+                else:
+                    break
+        else:
+            error_list.clear()
+            error_list.append("Item amount is numbers only.")
+            error_message()
+# Check item 14
+    while True:
+        if item_14_entry.isdigit():
+                if int(item_14_entry) <= 0:
+                    detail_list.append(item_14_entry)
+                    break
+                else:
+                    break
+        else:
+            error_list.clear()
+            error_list.append("Item amount is numbers only.")
+            error_message()
+# Check hire days
+    if date_entry.isdigit() and int(date_entry) > 0:
+        detail_list.append(date_entry)
+    else:
+        error_list.clear()
+        error_list.append("Hired days is numbers only and could not be 0 days.")
+        error_message()
+        
+# the customer name
+name_label = Label(root, text="Customer name")
+name_entry_box = Entry(root, width=13)
+
+# the recipe number
+recipe_number = random.randint(100000, 999999)
+recipe_label = Label(root, text="recipe_number").grid(column=0, row=1)
+recipe_number_label = Label(root, text=recipe_number).grid(column=1, row=1)
+space_1 = Label(root, text="").grid(column=0, row=2)
+
+# the quit button
+quit_button = Button(root, text="Quit", command=quit, fg="white", bg="red").grid(column=5, row=0, padx=15, pady=10, sticky=E)
+
+# Item hired 1 : Forks
+item_1_label = Label(root, text="Forks")
+item_1_entry_box = Entry(root, width=4)
+
+# Item hired 2 : Spoons
+item_2_label = Label(root, text="Spoons")
+item_2_entry_box = Entry(root, width=4)
+
+# Item hired 3 : Paper Plates
+item_3_label = Label(root, text="Paper Plates")
+item_3_entry_box = Entry(root, width=4)
+
+# Item hired 4 : Paper Cups
+item_4_label = Label(root, text="Paper Cups")
+item_4_entry_box = Entry(root, width=4)
+
+# Item hired 5 : Party Hats
+item_5_label = Label(root, text="Party Hats")
+item_5_entry_box = Entry(root, width=4)
+
+# Item hired 6 : White Ballons
+item_6_label = Label(root, text="White Ballons")
+item_6_entry_box = Entry(root, width=4)
+
+# Item hired 7 : Red Ballons
+item_7_label = Label(root, text="Red Ballons")
+item_7_entry_box = Entry(root, width=4)
+
+# Item hired 8 : Pink Ballons
+item_8_label = Label(root, text="Pink Ballons")
+item_8_entry_box = Entry(root, width=4)
+
+# Item hired 9 : Orange Ballons
+item_9_label = Label(root, text="Orange Ballons")
+item_9_entry_box = Entry(root, width=4)
+
+# Item hired 10 : Yellow Ballons
+item_10_label = Label(root, text="Yellow Ballons")
+item_10_entry_box = Entry(root, width=4)
+
+# Item hired 11 : Green Ballons
+item_11_label = Label(root, text="Green Ballons")
+item_11_entry_box = Entry(root, width=4)
+
+# Item hired 12 : Blue Ballons
+item_12_label = Label(root, text="Blue Ballons")
+item_12_entry_box = Entry(root, width=4)
+
+# Item hired 13 : Purple Ballons
+item_13_label = Label(root, text="Purple Ballons")
+item_13_entry_box = Entry(root, width=4)
+
+# Item hired 14 : Gold Ballons
+item_14_label = Label(root, text="Gold Ballons")
+item_14_entry_box = Entry(root, width=4)
+
+# Date hired
+date_label = Label(root,
+                   text="How long will you hire them for?")
+date_entry_box = Entry(root, width=4)
+
+# Append button
+append_list = Button(root, text="Append Details", command=add_to_list, bg="yellow").grid(column=2, row=11)
+
+# grid for customer name
+name_label.grid(column=0, row=0, padx=3, pady=5)
+name_entry_box.grid(column=1, row=0, padx=3, pady=5)
+
+# grid placement for items
+item_1_label.grid(column=0, row=3, padx=5, pady=5)
+item_1_entry_box.grid(column=1, row=3, padx=5, pady=5)
+item_2_label.grid(column=2, row=3)
+item_2_entry_box.grid(column=3, row=3, padx=40)
+item_3_label.grid(column=0, row=4, padx=5, pady=5)
+item_3_entry_box.grid(column=1, row=4)
+item_4_label.grid(column=2, row=4, padx=5, pady=5)
+item_4_entry_box.grid(column=3, row=4)
+item_5_label.grid(column=0, row=5, padx=5, pady=5)
+item_5_entry_box.grid(column=1, row=5)
+item_6_label.grid(column=2, row=5, padx=5, pady=5)
+item_6_entry_box.grid(column=3, row=5)
+item_7_label.grid(column=0, row=6, padx=5, pady=5)
+item_7_entry_box.grid(column=1, row=6)
+item_8_label.grid(column=2, row=6, padx=5, pady=5)
+item_8_entry_box.grid(column=3, row=6)
+item_9_label.grid(column=0, row=7, padx=5, pady=5)
+item_9_entry_box.grid(column=1, row=7)
+item_10_label.grid(column=2, row=7, padx=5, pady=5)
+item_10_entry_box.grid(column=3, row=7)
+item_11_label.grid(column=0, row=8, padx=5, pady=5)
+item_11_entry_box.grid(column=1, row=8)
+item_12_label.grid(column=2, row=8, padx=5, pady=5)
+item_12_entry_box.grid(column=3, row=8)
+item_13_label.grid(column=0, row=9, padx=5, pady=5)
+item_13_entry_box.grid(column=1, row=9)
+item_14_label.grid(column=2, row=9, padx=5, pady=5)
+item_14_entry_box.grid(column=3, row=9)
+
+# grid for hire date
+date_label.grid(column=0, row=10, pady=15)
+date_entry_box.grid(column=1, row=10)
+
+root.mainloop()
