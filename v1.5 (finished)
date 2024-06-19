@@ -19,7 +19,7 @@ def print_details ():
     details_window.geometry('680x250')
     details_window.title('All details')
     # create the column headings
-    Label(details_window, font=("Helvetica 10 bold"),text="Recipe number   ").grid(column=0,row=13)
+    Label(details_window, font=("Helvetica 10 bold"),text="Receipt number   ").grid(column=0,row=13)
     Label(details_window, font=("Helvetica 10 bold"),text="Name   ").grid(column=1,row=13)
     Label(details_window, font=("Helvetica 10 bold"),text="Hired date").grid(column=2,row=13)
     Label(details_window, font=("Helvetica 10 bold"),text="Fork   ").grid(column=3,row=13)
@@ -110,7 +110,7 @@ def setup_buttons():
     Button(main_window, text="Append Details",borderwidth=2, bg="yellow", command=check_inputs).grid(column=1,row=10)
     Button(main_window, text="Print Details", width=10,command=print_details).grid(column=0,row=12,padx=3, pady=3, sticky=W)
     Label(main_window, text="Full Name").grid(column=0,row=0,padx=6,sticky=E)
-    Label(main_window, text="Recipe Number").grid(column=0,row=1,sticky=E)
+    Label(main_window, text="Receipt Number").grid(column=0,row=1,sticky=E)
     Label(main_window, text=counters['total_entries'], font=("Helvetica 10 bold")).grid(column=1,row=1)
     Label(main_window, text="Forks").grid(column=0,row=2,sticky=E)
     Label(main_window, text="Spoons").grid(column=3,row=2,sticky=W)
