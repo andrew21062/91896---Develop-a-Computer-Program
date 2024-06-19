@@ -59,7 +59,7 @@ def check_inputs ():
         Label(main_window, text="Must not be 0", fg="red").grid(column=2,row=8)
         input_check = 1
 
-    if (name_entry.get().isalpha()):
+    if (name_entry.get().replace(' ','').isalpha()):
         pass
     else:
         Label(main_window, text="Invalid input", fg="red").grid(column=2,row=0)
