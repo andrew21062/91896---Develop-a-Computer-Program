@@ -211,7 +211,7 @@ def setup_buttons():
 main_window = Tk()
 main_window.geometry('690x420')
 main_window.resizable(width=False, height=False)
-main_window.title('v3.4')
+main_window.title('The Party Shop')
 
 # import all images that program will use and set up the main window's background
 main_icon = PhotoImage(file='main icon.png')
