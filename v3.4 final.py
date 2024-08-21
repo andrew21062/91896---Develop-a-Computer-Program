@@ -63,33 +63,33 @@ def check_inputs ():
 
     # check all inputs, if everything is 0 and the name entrybox is empty then send error message 
     if int(item_1_Forks.get()) == 0 and int(item_2_Spoons.get()) == 0 and int(item_3_Paper_plates.get()) == 0 and int(item_4_Paper_cups.get()) == 0 and int(item_5_Party_hats.get()) == 0 and int(item_6_Balloons.get()) == 0 and len(name_entry.get()) == 0 and int(hire_date.get()) == 0:
-        messagebox.showerror(' Error', 'Please entre your name, the amount of items you want and how long you want to hire them !')
+        messagebox.showerror(' Error', 'Please enter your name, the amount of items you want and how long you want to hire them !')
         all_check = 1
 
     while True:
         # if everything is 0 and the name entrybox is empty then don't check anything else
         if all_check == 1:
             break
-        # check the hire date, if it is empity then send erroe message
+        # check the hire date, if it is empty then send error message
         if len(name_entry.get()) == 0:
-            messagebox.showerror('  Error  ', 'Please entre your full name !')
+            messagebox.showerror('  Error  ', 'Please enter your full name !')
             input_check = 1
             break
-        # check the name entry, if it is not only alphabets or empity then send error message
+        # check the name entry, if it is not only alphabets or empty then send error message
         if (name_entry.get().replace(' ','').isalpha()):
             pass
         else:
             messagebox.showerror('  Error  ', 'Please only enter alphabets for your name !')
             input_check = 1
             break
-        # check the item boxes' entry, if all of them is empty send erroe message
+        # check the item boxes' entry, if all of them is empty send error message
         if int(item_1_Forks.get()) == 0 and int(item_2_Spoons.get()) == 0 and int(item_3_Paper_plates.get()) == 0 and int(item_4_Paper_cups.get()) == 0 and int(item_5_Party_hats.get()) == 0 and int(item_6_Balloons.get()) == 0:
             messagebox.showerror('  Error  ', 'Please pick the amount of items you want !')
             input_check = 1
             break
-        # check the hire date, if it is 0 then send erroe message
+        # check the hire date, if it is 0 then send error message
         if int(hire_date.get()) == 0:
-            messagebox.showerror('  Error  ', 'Please enter how many days you wan to hire the items !')
+            messagebox.showerror('  Error  ', 'Please enter how many days you want to hire the items !')
             input_check = 1
             break
         # if there is no errors then input_check will equal to 0 and jump to append_name, otherwise nothing will happen
@@ -213,7 +213,7 @@ main_window.geometry('690x420')
 main_window.resizable(width=False, height=False)
 main_window.title('v3.4')
 
-# import all images that programm will use and set up the main window's background
+# import all images that program will use and set up the main window's background
 main_icon = PhotoImage(file='main icon.png')
 main_bg = PhotoImage(file="main background.png")
 delete_icon = PhotoImage(file="delete icon.png")
@@ -271,5 +271,5 @@ delete_item = Entry(main_window, font=("Helvetica", 16, "bold"), width=5, border
 delete_item .grid(column=4,row=10)  
 # jump to the setup_buttons function
 setup_buttons()
-# loop the whole programm 
+# loop the whole program 
 main_window.mainloop()
